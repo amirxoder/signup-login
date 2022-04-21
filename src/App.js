@@ -3,7 +3,7 @@ import Signup from "./components/Signup";
 
 function App() {
   return (
-    <div className="w-100 h-100 d-flex align-center justify-center">
+    <div className="w-full h-screen flex justify-center items-center bg-zinc-800">
       <Signup />
     </div>
   );

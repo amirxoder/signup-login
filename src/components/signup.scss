@@ -1,0 +1,23 @@
+.label {
+  font-size: 12px;
+}
+
+.input__container input {
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.input__container {
+  position: relative;
+}
+
+.error__msg {
+  position: absolute;
+  bottom: -16px;
+  font-size: 0.6rem;
+  color: red;
+  background-color: rgba(255, 0, 0, 0.192);
+  padding: 1px 3px;
+  border-radius: 4px;
+}
