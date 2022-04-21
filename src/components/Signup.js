@@ -6,6 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { notify } from "../helpers/toast";
 
 import "./signup.scss";
+import { Link } from "react-router-dom";
 
 const Signup = () => {
   const [data, setData] = useState({
@@ -20,7 +21,7 @@ const Signup = () => {
   const [touched, setTouched] = useState({});
 
   useEffect(() => {
-    setErrors(validate(data,'signup'));
+    setErrors(validate(data, "signup"));
   }, [data]);
 
   const changeHandler = (event) => {
@@ -132,12 +133,12 @@ const Signup = () => {
       </div>
 
       <div className="mt-4">
-        <a
-          href="/"
+        <Link
+          to="/login"
           className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-1 mr-4 px-4 border border-blue-500 hover:border-transparent rounded"
         >
           Login
-        </a>
+        </Link>
         <button
           type="submit"
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 border border-blue-700 rounded"
